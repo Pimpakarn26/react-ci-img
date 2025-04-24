@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { FaShoppingCart, FaBell, FaChevronDown } from 'react-icons/fa'
+import waterImage from './assets/images/water.jpg';
+import fishImage from './assets/images/fish.jpg';
+import cheetosImage from './assets/images/cheetos.jpg';
+import breadImage from './assets/images/bread.jpg';
 
 function ProductCard({ name, price, stock, image }) {
   return (
@@ -21,25 +25,25 @@ function App() {
       name: 'สิงห์ น้ำดื่ม',
       price: '29.00',
       stock: 40,
-      image: '/images/water.jpg'
+      image: waterImage,
     },
     {
       name: 'ปุ้มปุ้ย ปลาแมคเคอเรลทอด',
       price: '27.00',
       stock: 20,
-      image: '/images/fish.jpg'
+      image: fishImage,
     },
     {
       name: 'ชีโตส รสสไปซี่',
       price: '20.00',
       stock: 20,
-      image: '/images/cheetos.jpg'
+      image: cheetosImage,
     },
     {
       name: 'ฟาร์มเฮ้าส์ ขนมปังโฮลวีต',
       price: '46.00',
       stock: 20,
-      image: '/images/bread.jpg'
+      image: breadImage,
     }
   ]
 
@@ -61,7 +65,7 @@ function App() {
             <FaShoppingCart size={20} />
           </div>
           <div className="user-profile">
-            <img src="/images/avatar.png" alt="Admin" />
+            <img src="avatar.png" alt="Admin" />
             <div className="user-details">
               <span className="user-name">มานะ มานี</span>
               <span className="user-role">Admin</span>
